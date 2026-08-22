@@ -3,6 +3,7 @@
 <div align="center">
 
 ![Chatty Banner](https://img.shields.io/badge/Chatty-Realtime_Chat_App-black?style=for-the-badge&logo=chat&logoColor=white)
+[![Live Demo](https://img.shields.io/badge/Live_Demo-Online-success?style=for-the-badge&logo=render&logoColor=white)](https://hidden-leaf-village-udab.onrender.com)
 
 [![React](https://img.shields.io/badge/React_18-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://reactjs.org/)
 [![Node.js](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)](https://nodejs.org/)
@@ -14,9 +15,27 @@
 
 **A high-performance, real-time messaging application designed with a sleek monochrome aesthetic, glassmorphic UI, and fluid micro-animations.**
 
+### 🌐 [Click Here to Open Live Demo App](https://hidden-leaf-village-udab.onrender.com)
+
 Developed by **[Ishant Gupta](https://github.com/Ishant6565)**
 
 </div>
+
+---
+
+## ⚡ Live Demo & Demo Accounts
+
+Try out the live deployment immediately with pre-configured characters:
+
+- **Live URL:** **[https://hidden-leaf-village-udab.onrender.com](https://hidden-leaf-village-udab.onrender.com)**
+
+### Demo Accounts (Password for all: `1234567890`)
+| Character | Email |
+| :--- | :--- |
+| **Naruto Uzumaki** | `naruto@hiddenleaf.com` |
+| **Kakashi Hatake** | `kakashi@hiddenleaf.com` |
+| **Sasuke Uchiha** | `sasuke@hiddenleaf.com` |
+| **Hinata Hyuga** | `hinata@hiddenleaf.com` |
 
 ---
 
@@ -80,13 +99,14 @@ chat-app/
 │   └── package.json
 │
 ├── package.json              # Monorepo build orchestrator
+├── render.yaml               # Render Cloud deployment blueprint
 ├── LICENSE                   # MIT License
 └── README.md
 ```
 
 ---
 
-## 🚀 Getting Started
+## 🚀 Getting Started Locally
 
 ### 1. Prerequisites
 - [Node.js](https://nodejs.org/) (v18.0.0 or higher)
@@ -133,7 +153,7 @@ npm install
 npm run dev
 ```
 
-Visit **`http://localhost:5173`** in your browser to interact with the application.
+Visit **`http://localhost:5173`** in your browser to interact with the local development instance.
 
 ---
 
@@ -141,6 +161,7 @@ Visit **`http://localhost:5173`** in your browser to interact with the applicati
 
 **Ishant Gupta**
 - **GitHub:** [@Ishant6565](https://github.com/Ishant6565)
+- **Live Project:** [Hidden Leaf Chat App](https://hidden-leaf-village-udab.onrender.com)
 - **Portfolio:** [Portfolio Website](https://github.com/Ishant6565/portfolio)
 
 ---
