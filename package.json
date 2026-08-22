@@ -1,4 +1,4 @@
-﻿{
+{
   "name": "chat-app",
   "version": "1.0.0",
   "description": "Full-stack real-time chat application with React, Node.js, Express, Socket.io, MongoDB, and TailwindCSS.",
