@@ -29,7 +29,7 @@ const App = () => {
           <Loader className="size-5 animate-spin text-white" />
         </div>
         <p className="text-xs text-zinc-500 font-mono tracking-widest uppercase animate-pulse">
-          Loading Chatty...
+          Loading Hidden Leaf Village...
         </p>
       </div>
     );

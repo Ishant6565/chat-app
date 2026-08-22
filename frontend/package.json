@@ -1,8 +1,8 @@
 {
-  "name": "chat-app-frontend",
+  "name": "hidden-leaf-frontend",
   "private": true,
   "version": "1.0.0",
-  "description": "Frontend client for Chatty real-time chat application",
+  "description": "Frontend client for Hidden Leaf Village real-time messaging application",
   "author": "Ishant Gupta <ishantgupta6094@gmail.com>",
   "type": "module",
   "scripts": {

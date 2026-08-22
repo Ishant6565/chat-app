@@ -1,8 +1,8 @@
-﻿# 💬 Chatty — Fullstack Real-Time Messaging Platform
+﻿# 🍃 Hidden Leaf Village — Real-Time Shinobi Messaging Platform
 
 <div align="center">
 
-![Chatty Banner](https://img.shields.io/badge/Chatty-Realtime_Chat_App-black?style=for-the-badge&logo=chat&logoColor=white)
+![Hidden Leaf Banner](https://img.shields.io/badge/Hidden_Leaf_Village-Shinobi_Messaging-black?style=for-the-badge&logo=ninja&logoColor=white)
 [![Live Demo](https://img.shields.io/badge/Live_Demo-Online-success?style=for-the-badge&logo=render&logoColor=white)](https://hidden-leaf-village-udab.onrender.com)
 
 [![React](https://img.shields.io/badge/React_18-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://reactjs.org/)
@@ -13,9 +13,9 @@
 [![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
 
-**A high-performance, real-time messaging application designed with a sleek monochrome aesthetic, glassmorphic UI, and fluid micro-animations.**
+**A high-performance real-time messaging network engineered for the shinobi of the Hidden Leaf Village. Built with a sleek monochrome aesthetic, glassmorphic UI, and fluid micro-animations.**
 
-### 🌐 [Click Here to Open Live Demo App](https://hidden-leaf-village-udab.onrender.com)
+### 🌐 [Click Here to Open Live Application](https://hidden-leaf-village-udab.onrender.com)
 
 Developed by **[Ishant Gupta](https://github.com/Ishant6565)**
 
@@ -23,28 +23,32 @@ Developed by **[Ishant Gupta](https://github.com/Ishant6565)**
 
 ---
 
-## ⚡ Live Demo & Demo Accounts
+## ⚡ Live Demo & Shinobi Accounts
 
-Try out the live deployment immediately with pre-configured characters:
+Try out the live deployment immediately with pre-configured shinobi profiles:
 
 - **Live URL:** **[https://hidden-leaf-village-udab.onrender.com](https://hidden-leaf-village-udab.onrender.com)**
 
 ### Demo Accounts (Password for all: `1234567890`)
-| Character | Email |
-| :--- | :--- |
-| **Naruto Uzumaki** | `naruto@hiddenleaf.com` |
-| **Kakashi Hatake** | `kakashi@hiddenleaf.com` |
-| **Sasuke Uchiha** | `sasuke@hiddenleaf.com` |
-| **Hinata Hyuga** | `hinata@hiddenleaf.com` |
+| Shinobi | Email | Role |
+| :--- | :--- | :--- |
+| **Naruto Uzumaki** | `naruto@hiddenleaf.com` | Genin / Future Hokage |
+| **Kakashi Hatake** | `kakashi@hiddenleaf.com` | Team 7 Captain / Copy Ninja |
+| **Sasuke Uchiha** | `sasuke@hiddenleaf.com` | Shadow Shinobi / Uchiha Clan |
+| **Hinata Hyuga** | `hinata@hiddenleaf.com` | Byakugan Princess |
+| **Shikamaru Nara** | `shikamaru@hiddenleaf.com` | Chief Strategist |
+| **Lady Tsunade** | `tsunade@hiddenleaf.com` | Fifth Hokage |
+| **Gaara** | `gaara@hiddenleaf.com` | Fifth Kazekage |
+| **Sakura Haruno** | `sakura@hiddenleaf.com` | Medical Ninja |
 
 ---
 
 ## ✨ Key Features
 
-- **⚡ Real-Time Messaging:** Instant bidirectional message delivery powered by **Socket.io** WebSockets.
+- **⚡ Real-Time Messaging:** Instant bidirectional shinobi transmissions powered by **Socket.io** WebSockets.
 - **🟢 Live Presence Tracking:** Real-time online/offline status indicators with animated status badges.
 - **🔒 Secure Authentication:** JWT-based authentication stored in `httpOnly` secure cookies with bcrypt password hashing.
-- **🖼️ Media Sharing Pipeline:** Seamless image upload and compression via **Cloudinary API**.
+- **🖼️ Media Sharing Pipeline:** Seamless shinobi intelligence and image upload via **Cloudinary API**.
 - **🎨 Sleek Monochrome Aesthetic:** Modern black-and-white minimalist design with custom glassmorphism surfaces, smooth slide-up message animations, and dark mode UI.
 - **🔍 Instant Contact Search:** Client-side live search and filter for quick conversation discovery.
 - **🎭 Multi-Theme Switcher:** 32 customizable themes (powered by DaisyUI) with real-time interactive preview.
@@ -72,10 +76,10 @@ Try out the live deployment immediately with pre-configured characters:
 
 ---
 
-## 📁 Repository Structure
+## 📁 Architecture Overview
 
 ```text
-chat-app/
+hidden-leaf-village/
 ├── backend/
 │   ├── src/
 │   │   ├── controllers/      # Auth & message business logic
@@ -83,12 +87,12 @@ chat-app/
 │   │   ├── middleware/       # JWT route protection middleware
 │   │   ├── models/           # Mongoose User & Message schemas
 │   │   ├── routes/           # Express API route endpoints
-│   │   ├── seeds/            # Database initialization scripts
+│   │   ├── seeds/            # Shinobi database initialization scripts
 │   │   └── index.js          # Express app entry point
 │   └── package.json
 │
 ├── frontend/
-│   ├── public/               # Static assets & avatar images
+│   ├── public/               # Shinobi avatars & static assets
 │   ├── src/
 │   │   ├── components/       # Reusable UI components & skeletons
 │   │   ├── pages/            # Home, Login, Signup, Profile, Settings
@@ -99,61 +103,10 @@ chat-app/
 │   └── package.json
 │
 ├── package.json              # Monorepo build orchestrator
-├── render.yaml               # Render Cloud deployment blueprint
+├── render.yaml               # Cloud deployment blueprint
 ├── LICENSE                   # MIT License
 └── README.md
 ```
-
----
-
-## 🚀 Getting Started Locally
-
-### 1. Prerequisites
-- [Node.js](https://nodejs.org/) (v18.0.0 or higher)
-- [MongoDB Atlas](https://www.mongodb.com/cloud/atlas) account
-- [Cloudinary](https://cloudinary.com/) account
-
-### 2. Clone the Repository
-```bash
-git clone https://github.com/Ishant6565/chat-app.git
-cd chat-app
-```
-
-### 3. Configure Environment Variables
-Create a `.env` file in the `backend/` directory:
-
-```env
-PORT=5001
-MONGODB_URI=your_mongodb_atlas_connection_string
-JWT_SECRET=your_secret_jwt_key
-CLOUDINARY_CLOUD_NAME=your_cloudinary_cloud_name
-CLOUDINARY_API_KEY=your_cloudinary_api_key
-CLOUDINARY_API_SECRET=your_cloudinary_api_secret
-NODE_ENV=development
-```
-
-### 4. Install Dependencies & Run Locally
-
-#### Option A: Run Both Simultaneously
-```bash
-npm run build
-npm start
-```
-
-#### Option B: Run Services Individually (Development Mode)
-```bash
-# Terminal 1 - Backend
-cd backend
-npm install
-npm run dev
-
-# Terminal 2 - Frontend
-cd frontend
-npm install
-npm run dev
-```
-
-Visit **`http://localhost:5173`** in your browser to interact with the local development instance.
 
 ---
 
@@ -161,7 +114,7 @@ Visit **`http://localhost:5173`** in your browser to interact with the local dev
 
 **Ishant Gupta**
 - **GitHub:** [@Ishant6565](https://github.com/Ishant6565)
-- **Live Project:** [Hidden Leaf Chat App](https://hidden-leaf-village-udab.onrender.com)
+- **Live Project:** [Hidden Leaf Village](https://hidden-leaf-village-udab.onrender.com)
 - **Portfolio:** [Portfolio Website](https://github.com/Ishant6565/portfolio)
 
 ---

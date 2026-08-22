@@ -1,7 +1,7 @@
 {
-  "name": "chat-app-backend",
+  "name": "hidden-leaf-backend",
   "version": "1.0.0",
-  "description": "Backend API server for Chatty real-time chat application",
+  "description": "Backend API server for Hidden Leaf Village real-time chat application",
   "main": "src/index.js",
   "author": "Ishant Gupta <ishantgupta6094@gmail.com>",
   "scripts": {

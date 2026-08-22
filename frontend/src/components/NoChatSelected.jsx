@@ -23,17 +23,17 @@ const NoChatSelected = () => {
         {/* Welcome Text */}
         <div className="space-y-2">
           <h2 className="text-xl sm:text-2xl font-bold tracking-tight text-white">
-            Welcome to Chatty
+            Welcome to Hidden Leaf Village
           </h2>
           <p className="text-sm text-zinc-400 max-w-sm mx-auto leading-relaxed">
-            Select a conversation from the contacts list to start messaging in real-time.
+            Select a shinobi from your contacts list to start secret encrypted transmissions in real-time.
           </p>
         </div>
 
         {/* Subtle Badge */}
         <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/5 border border-white/10 text-zinc-400 text-xs font-mono">
           <span className="size-1.5 rounded-full bg-white animate-ping" />
-          End-to-End Connected
+          Leaf Village Encrypted
         </div>
       </div>
     </div>

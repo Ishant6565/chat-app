@@ -20,10 +20,10 @@ const Navbar = () => {
               </div>
               <div className="flex flex-col">
                 <span className="text-base font-semibold tracking-tight text-white">
-                  Chatty
+                  Hidden Leaf Village
                 </span>
                 <span className="text-[10px] text-zinc-400 font-mono -mt-1 tracking-widest uppercase">
-                  Minimal
+                  Shinobi Network
                 </span>
               </div>
             </Link>

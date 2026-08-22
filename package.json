@@ -1,7 +1,7 @@
 {
-  "name": "chat-app",
+  "name": "hidden-leaf-village",
   "version": "1.0.0",
-  "description": "Full-stack real-time chat application with React, Node.js, Express, Socket.io, MongoDB, and TailwindCSS.",
+  "description": "Hidden Leaf Village — Full-stack real-time shinobi messaging platform built with React, Node.js, Express, Socket.io, MongoDB, and TailwindCSS.",
   "main": "index.js",
   "author": "Ishant Gupta <ishantgupta6094@gmail.com>",
   "repository": {
@@ -13,6 +13,7 @@
     "start": "npm run start --prefix backend"
   },
   "keywords": [
+    "hidden-leaf-village",
     "react",
     "nodejs",
     "express",
