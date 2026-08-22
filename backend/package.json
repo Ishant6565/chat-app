@@ -1,0 +1,35 @@
+﻿{
+  "name": "chat-app-backend",
+  "version": "1.0.0",
+  "description": "Backend API server for Chatty real-time chat application",
+  "main": "src/index.js",
+  "author": "Ishant Gupta <ishantgupta6094@gmail.com>",
+  "scripts": {
+    "dev": "nodemon src/index.js",
+    "start": "node src/index.js",
+    "seed": "node src/seeds/seed_naruto_users.js"
+  },
+  "keywords": [
+    "express",
+    "socket.io",
+    "mongoose",
+    "jwt",
+    "bcryptjs"
+  ],
+  "type": "module",
+  "license": "MIT",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cloudinary": "^2.5.1",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.8.1",
+    "socket.io": "^4.8.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.7"
+  }
+}
