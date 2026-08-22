@@ -23,6 +23,35 @@ Developed by **[Ishant Gupta](https://github.com/Ishant6565)**
 
 ---
 
+## 📸 Interface Previews
+
+### 1. Real-Time Dual-Client Transmissions & Media Sharing
+> *Bidirectional WebSockets in action between Naruto Uzumaki and Kakashi Hatake with seamless instant image delivery powered by Cloudinary.*
+
+<div align="center">
+  <img src="./screenshots/chat-realtime-demo.png" alt="Real-time Chat Demonstration" width="100%" />
+</div>
+
+---
+
+### 2. Shinobi Directory & Active Conversation
+> *High-contrast monochrome message thread, instant live contact search, and real-time online presence indicators.*
+
+<div align="center">
+  <img src="./screenshots/chat-room-overview.png" alt="Chat Room Overview" width="100%" />
+</div>
+
+---
+
+### 3. Shinobi Profile Management
+> *Minimalist dark profile management interface featuring Cloudinary-powered avatar uploads and verified status badges.*
+
+<div align="center">
+  <img src="./screenshots/shinobi-profile.png" alt="Shinobi Profile" width="100%" />
+</div>
+
+---
+
 ## ⚡ Live Demo & Shinobi Accounts
 
 Try out the live deployment immediately with pre-configured shinobi profiles:
@@ -102,6 +131,7 @@ hidden-leaf-village/
 │   │   └── index.css         # Custom animations & glassmorphism utilities
 │   └── package.json
 │
+├── screenshots/              # UI preview screenshots for documentation
 ├── package.json              # Monorepo build orchestrator
 ├── render.yaml               # Cloud deployment blueprint
 ├── LICENSE                   # MIT License
