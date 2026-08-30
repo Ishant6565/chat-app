@@ -1,8 +1,8 @@
-﻿import { useState } from "react";
+import { useState } from "react";
 import { useAuthStore } from "../store/useAuthStore";
 import AuthImagePattern from "../components/AuthImagePattern";
 import { Link } from "react-router-dom";
-import { Eye, EyeOff, Loader2, Lock, Mail, MessageSquare } from "lucide-react";
+import { Eye, EyeOff, Loader2, Lock, Mail, MessageSquare, Zap } from "lucide-react";
 
 const LoginPage = () => {
   const [showPassword, setShowPassword] = useState(false);
@@ -10,7 +10,7 @@ const LoginPage = () => {
     email: "",
     password: "",
   });
-  const { login, isLoggingIn } = useAuthStore();
+  const { login, loginDemo, isLoggingIn } = useAuthStore();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -21,14 +21,37 @@ const LoginPage = () => {
     <div className="min-h-screen grid lg:grid-cols-2 bg-black text-white pt-16">
       {/* Left Side - Form */}
       <div className="flex flex-col justify-center items-center p-6 sm:p-12">
-        <div className="w-full max-w-md space-y-8 animate-slide-up">
+        <div className="w-full max-w-md space-y-6">
           {/* Logo & Header */}
           <div className="text-center">
-            <div className="inline-flex size-12 rounded-2xl bg-white/10 border border-white/15 items-center justify-center mb-4 shadow-sm">
+            <div className="inline-flex size-12 rounded-2xl bg-white/10 border border-white/15 items-center justify-center mb-3 shadow-sm">
               <MessageSquare className="size-6 text-white" />
             </div>
             <h1 className="text-2xl font-bold tracking-tight text-white">Welcome Back</h1>
-            <p className="text-xs sm:text-sm text-zinc-400 mt-1">Sign in to your account</p>
+            <p className="text-xs sm:text-sm text-zinc-400 mt-1">Sign in to your Hidden Leaf account</p>
+          </div>
+
+          {/* Quick Demo Access Button */}
+          <div className="p-3.5 rounded-2xl border border-white/15 bg-zinc-900/80 backdrop-blur-xl text-center space-y-2 shadow-xl">
+            <div className="flex items-center justify-center gap-1.5 text-xs text-zinc-300 font-medium">
+              <Zap className="size-3.5 text-amber-400 fill-amber-400" />
+              <span>Instant Portfolio Preview</span>
+            </div>
+            <button
+              type="button"
+              onClick={() => loginDemo("naruto")}
+              className="w-full py-2 px-3 rounded-xl bg-white text-black font-semibold text-xs hover:bg-zinc-200 transition-all flex items-center justify-center gap-2 shadow-md"
+            >
+              ⚡ Explore as Naruto Uzumaki (Demo)
+            </button>
+          </div>
+
+          <div className="relative flex items-center justify-center">
+            <div className="border-t border-white/10 w-full" />
+            <span className="bg-black px-3 text-[11px] font-mono uppercase tracking-widest text-zinc-500">
+              Or with Credentials
+            </span>
+            <div className="border-t border-white/10 w-full" />
           </div>
 
           {/* Form */}
@@ -72,13 +95,13 @@ const LoginPage = () => {
 
             <button
               type="submit"
-              className="w-full py-2.5 px-4 rounded-xl bg-white text-black font-semibold text-sm hover:bg-zinc-200 transition-all duration-200 hover:scale-[1.01] active:scale-[0.99] flex items-center justify-center gap-2 shadow-lg mt-2"
+              className="w-full py-2.5 px-4 rounded-xl bg-zinc-800 border border-white/15 text-white font-semibold text-sm hover:bg-zinc-700 transition-all duration-200 flex items-center justify-center gap-2 shadow-lg mt-2"
               disabled={isLoggingIn}
             >
               {isLoggingIn ? (
                 <>
                   <Loader2 className="size-4 animate-spin" />
-                  <span>Signing in...</span>
+                  <span>Connecting...</span>
                 </>
               ) : (
                 "Sign In"
@@ -99,7 +122,7 @@ const LoginPage = () => {
       {/* Right Side - Geometric Pattern */}
       <AuthImagePattern
         title="Welcome back!"
-        subtitle="Sign in to continue your conversations and catch up with your messages."
+        subtitle="Sign in to continue your shinobi communications across the Hidden Leaf Village."
       />
     </div>
   );
